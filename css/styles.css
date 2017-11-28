@@ -1,0 +1,25 @@
+/* For testing only */
+
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}
+
+.columns {
+  min-height: 100px;
+}
+
+/* End for testing */
+
+
+.one {
+  height: 48vh;
+  width: 90vw;
+  margin: 1vh auto;
+}
+
+.two, .three {
+  height: 23vh;
+  width: 90vw;
+  margin: 1vh auto;
+}
