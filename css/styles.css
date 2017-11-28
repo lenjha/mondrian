@@ -1,25 +1,57 @@
 /* For testing only */
 
-*:not(body):not(html) {
+/**:not(body):not(html) {
   box-sizing:border-box;
   border:1px dashed #000;
 }
 
 .columns {
   min-height: 100px;
-}
+}*/
 
 /* End for testing */
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  background: lightyellow;
+}
 
 .one {
-  height: 48vh;
-  width: 90vw;
-  margin: 1vh auto;
+  background: lightgreen;
+  height: 49vh;
+  margin-bottom: 1vh;
+}
+
+.two {
+  background: red;
+  margin-bottom: 1vh;
+}
+
+.three {
+  background: blue;
 }
 
 .two, .three {
-  height: 23vh;
-  width: 90vw;
-  margin: 1vh auto;
+  height: 24.5vh;
+}
+
+
+
+@media screen and (min-width: 500px) {
+
+  .two, .three {
+    height: 50vh;
+    width: 49vw;
+    float: left;
+  }
+
+  .two {
+    margin-right: 2vw;
+  }
+
 }
